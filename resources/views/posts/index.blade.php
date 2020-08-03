@@ -19,7 +19,7 @@
                         <div class="card-img"
                              style="background-image: url({{ $post->img ?? asset('img/hd-background-new-york-nyc-buildings-skyscrapers-metropolis.jpg')}})"></div>
                         <div class="card-author">Author: {{$post->name}}</div>
-                        <a href="#" class="btn btn-outline-primary">View more</a>
+                        <a href="{{route ('post.show', ['id' => $post->post_id])}}" class="btn btn-outline-primary">View more</a>
                     </div>
                 </div>
             </div>
